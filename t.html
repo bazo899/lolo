@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sidebar</title>
+</head>
+<style>
+.side
+{
+   width:0px;
+  height:1000px;
+  position: fixed;
+  background-color: silver;
+  overflow: hidden;  
+  transition: 0.3s;
+  padding-top: 20px;
+  
+  
+  
+  
+    display: flex;
+  flex-direction: row-reverse;
+  
+  
+  
+}
+.side a {
+  padding: 10px 10px 10px 20px;
+  text-decoration: none;
+   font-size: 25px;
+  color: yellow;
+    transition: 0.1s;
+	 display: block;
+}
+.side a:hover
+{
+  color: #f1f1f1;
+  background-color:green;
+}
+.clo
+{
+position:absolute;
+right: 10px;
+top:0;
+font-size: 25px;
+  margin-left: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .side {padding-top: 15px;}
+  .side a {font-size: 18px;}
+}
+p{
+font-size:20px;
+}
+
+<!--dark-->
+
+body{
+background-color:red; 
+}
+
+.dark{background-color:black; color:white}
+.d{
+  margin-left: 8px;
+  position:absolute;
+  top:5px;
+  display:flex;
+}
+</style>
+
+<body>
+
+<div class="side"  id="sidebar">
+<div onclick="dark()"  ><img src="C:\Users\Bahza\OneDrive\Pictures\dark.png" class="d" width="30px"></div>
+	<button onclick="w3_close()" class="clo"> &times;</button><br>
+	<a href="#">about me</a>
+	<a href="#">contact me</a>
+	<a href="#">address me</a>
+</div>
+
+<button onclick="w3_open()" style="font-size:30px;cursor:pointer" >&#9776; menu</button>
+
+<iframe src="http://cpp.sh/" width="1000px" height="1000px"></iframe>
+</body>
+
+<br><br>
+<p>bahzad muhammed tayib haji omar hbfvrwifhwh vewuo rbveogvr ervoebg efen vreog ru eru gvui g goug eg eg gog   9 b9  9ri r gigri gri rgu g r  r hgf hur hur hrf urf uhr u r uhfru rfhu ruh ufh hufr uhf uher vh hfh  fhv re8hnv8rn rvnnfinc rvrvrt vrvrb er frgdgdr tghfg  gfj birn v8rh v8ir 8hr 8n vgrhnvr8nv r8hvn tn r8hvnrhn 8rhenv8rhtn </p>
+<script>
+function w3_open()
+{
+document.getElementById("sidebar").style.width="150px";
+document.getElementById("sidebar").style.height="1000px";
+}
+function w3_close()
+{
+document.getElementById("sidebar").style.width="0px";
+}
+<!-- dark mode -->
+function dark(){
+var x=document.body;
+x.classList.toggle("dark");
+}
+</script>
+
+</html>
+
+
